@@ -283,7 +283,7 @@
 <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
   <script>
     let path = window.location.pathname.split("/")
-    let name = 'main.md'
+    let name = 'main'
     let index = path.length - 2 >= 0 ? path.length - 2 : 0
     if (path[index] !== '' && path[index] !== 'post' && index < path.length - 1) {
         window.location.replace("https://daovietanh99.github.io");
@@ -291,7 +291,7 @@
     if (path[path.length - 1] !== '' && path[index] === 'post') {
         name = path[path.length - 1]
     }
-    fetch("/posts/" + "main.md").then(res => res.text()).then(res => {
+    fetch("/posts/" + name + ".md").then(res => res.text()).then(res => {
         document.getElementById('content').innerHTML =
           marked.parse(res);
     })
