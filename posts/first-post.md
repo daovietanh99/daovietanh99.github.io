@@ -1,6 +1,6 @@
 Most of the times, I find my self binding the anchor elements such that when they are clicked I open some window using Javascript i.e. some thing like the following:
 
-```javascript
+```js
 // &lt;a href="#" class="someLink">Some Link&lt;/a&gt;
  
 $('.someLink').on('click', function () {
@@ -10,7 +10,7 @@ $('.someLink').on('click', function () {
 
 Of course it works, but the problem with this approach is, `CTRL + click` which is normally used to open the link in the the new tab/window turns out opening the link in the same window and thus poor user experience. So to avoid this i.e. forcing it to open the link in the new tab instead of the current tab, you may want to modify your event as following:
 
-```javascript
+```js
 $('.someLink').on('click', function(e) {
  
     if(e.metaKey || e.ctrlKey || e.button === 1) {
