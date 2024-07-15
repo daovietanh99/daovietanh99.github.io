@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="avatar.jpg">
+    <link rel="icon" href="/avatar.jpg">
     <title>Vietanh99's Blog Post</title>
     <style>
         *,
@@ -258,7 +258,7 @@
                 <div class="post__author">
                   <div class="author__image undefined">
                     <a href="https://www.facebook.com/daovietanh99">
-                      <img src="avatar.jpg" alt="avatar">
+                      <img src="/avatar.jpg" alt="avatar">
                     </a>
                   </div>
                   <div class="author__details">
@@ -291,7 +291,7 @@
     if (path[path.length - 1] !== '' && path[index] === 'post') {
         name = path[path.length - 1]
     }
-    fetch("posts/" + "main.md").then(res => res.text()).then(res => {
+    fetch("/posts/" + "main.md").then(res => res.text()).then(res => {
         document.getElementById('content').innerHTML =
           marked.parse(res);
     })
