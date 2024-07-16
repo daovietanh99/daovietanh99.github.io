@@ -292,8 +292,14 @@
         name = path[path.length - 1]
     }
     fetch("/posts/" + name + ".md").then(res => res.text()).then(res => {
-        document.getElementById('content').innerHTML =
-          marked.parse(res);
+        let contained = (res.indexOf("#####~spliter~#####") != -1);
+        if (!contained) {
+            window.location.replace("https://daovietanh99.github.io");
+        } else {
+            content = res.split("#####~spliter~#####")
+            document.getElementById('content').innerHTML =
+              marked.parse(content[content.length - 1]);
+        }
     })
   </script>
 </html>
