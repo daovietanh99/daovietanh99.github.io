@@ -284,6 +284,10 @@
   <script>
     let path = window.location.pathname.split("/")
     let name = 'main'
+    // let endpoint = "/posts/"
+    // let postfix = ".md"
+    let endpoint = "/posts/render/"
+    let postfix = ""
     let index = path.length - 2 >= 0 ? path.length - 2 : 0
     if (path[index] !== '' && path[index] !== 'post' && index < path.length - 1) {
         window.location.replace("https://daovietanh99.github.io");
@@ -291,7 +295,7 @@
     if (path[path.length - 1] !== '' && path[index] === 'post') {
         name = path[path.length - 1]
     }
-    fetch("/posts/" + name + ".md")
+    fetch(endpoint + name + postfix)
     .then(res => {
         if (res.status != 200) {
             window.location.replace("https://daovietanh99.github.io");
