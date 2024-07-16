@@ -18,7 +18,15 @@ In this post, I will demonstrate a simple Django Web App. My tutorial focuses on
 Once you run this command, a Django project with following boilerplate structure will be created inside your your_project_name folder. Let's pay attention on some project components. Firstly, we have `manage.py` file, where we can run django command from here. Go deeper we have a folder which name is as the same as the project name. Inside, we have `settings.py` file, that stores the project configuration; 'urls.py' file contains API endpoints and routers, and `asgi.py` and `wsgi.py` for running server engine.
 
 ```shell
-
+tree your_project_name
+your_project_name
+├── manage.py
+└── your_project_name
+    ├── asgi.py
+    ├── __init__.py
+    ├── settings.py
+    ├── urls.py
+    └── wsgi.py
 ```
 
 We then can run the server by applying the following command in the project's root folder:
