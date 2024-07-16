@@ -307,7 +307,7 @@
             // document.getElementById('content').innerHTML = marked.parse(content[content.length - 1]);
              document.getElementById('content').innerHTML = res
              let content_body = document.getElementByClassName("markdown-body")
-             content_body[0].remove(content_body[0].getElementByTagName("h1")[0])
+             content_body[0].removeChild(content_body[0].getElementByTagName("h1")[0])
     }).catch(e => {
         window.location.replace("https://daovietanh99.github.io");
     })
