@@ -292,8 +292,9 @@
         name = path[path.length - 1]
     }
     fetch("/posts/" + name + ".md").then(res => res.text()).then(res => {
+            content = res.spliter("=====@spliter@=====")
             document.getElementById('content').innerHTML =
-              marked.parse(res);
+              marked.parse(content[content.length - 1]);
     })
   </script>
 </html>
