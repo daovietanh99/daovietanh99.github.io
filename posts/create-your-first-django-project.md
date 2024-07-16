@@ -35,4 +35,6 @@ We then can run the server by applying the following command in the project's ro
 python manage.py runserver host:port
 ```
 
-Where, host and port are 
+Where, host and port are subsequently the IP of host server and the port you want the application to run on. In my example, I use `0.0.0.0` for host IP and `8000` for port. Using `0.0.0.0` help us exposing the application to outbound network. After running the Django project, we will get something like following.
+
+
