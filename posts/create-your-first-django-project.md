@@ -6,25 +6,22 @@ permalink: /posts/render/create-your-first-django-project
 
 # Create your first Django project  
 
+	![Django](https://img.shields.io/badge/django-%23092E20.svg?style=for-the-badge&logo=django&logoColor=white)
+ ![DjangoREST](https://img.shields.io/badge/DJANGO-REST-ff1709?style=for-the-badge&logo=django&logoColor=white&color=ff1709&labelColor=gray)
+
 In this post, I will demonstrate a simple Django Web App. My tutorial focuses on the initial steps you’ll need to take to start a new web application. To start a django project, we simply use the bellow command:
 
 ```shell
 python -m django-admin startproject your_project_name
 ```
 
-Of course it works, but the problem with this approach is, `CTRL + click` which is normally used to open the link in the the new tab/window turns out opening the link in the same window and thus poor user experience. So to avoid this i.e. forcing it to open the link in the new tab instead of the current tab, you may want to modify your event as following:
+Once you run this command, a Django project with following structure will be created inside your your_project_name folder. Let's pay attention on some project components. Firstly, we have `manage.py` file, 
 
-```js
-$('.someLink').on('click', function(e) {
- 
-    if(e.metaKey || e.ctrlKey || e.button === 1) {
-        window.open('http://somelink.com/');
-    }
-    else {
-        window.location = 'http://somelink.com/';
-    }
- 
-});
+
+We then can run the server by applying the following command:
+
+```shell
+python manage.py runserver host:port
 ```
 
-It’s a little check and can greatly improve the user experience.
+Where, host and port are 
