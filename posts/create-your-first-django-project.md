@@ -1,3 +1,9 @@
+date: 2016-09-14
+permalink: /blog/2016/09/14/art-of-getting-better/
+coverimg: /static/cover.jpg
+
+#####~spliter~#####
+
 # Create your first Django project  
 
 In this post, I will demonstrate a simple Django Web App. My tutorial focuses on the initial steps you’ll need to take to start a new web application. To start a django project, we simply use the bellow command:
