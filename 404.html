@@ -293,7 +293,7 @@
     }
     fetch("/posts/" + name + ".md").then(res => res.text()).then(res => {
             document.getElementById('content').innerHTML =
-              marked.parse(content[content.length - 1]);
+              marked.parse(res);
     })
   </script>
 </html>
