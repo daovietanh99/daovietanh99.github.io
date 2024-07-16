@@ -1,8 +1,8 @@
 ---
 date: 2016-09-14
 coverimg: /static/cover.jpg
+permalink: /posts/create-your-first-django-project.md
 ---
-#####~spliter~#####
 
 # Create your first Django project  
 
