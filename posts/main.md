@@ -1,6 +1,7 @@
-date: 2016-09-14
-coverimg: /static/cover.jpg
-
-=====@spliter@=====
+---
+date: 16-07-2024
+coverimg: /static/img/cover.jpg
+permalink: /posts/render/create-your-first-django-project
+---
 
 # Welcome to Vietanh99 Technical Blog Post 🥳😄
