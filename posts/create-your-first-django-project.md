@@ -1,7 +1,8 @@
+---
 date: 16-07-2024
 coverimg: /static/img/cover.jpg
-
-=====@spliter@=====
+permalink: /posts/render/create-your-first-django-project
+---
 
 # Create your first Django project  
 
