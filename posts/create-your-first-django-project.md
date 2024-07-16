@@ -38,3 +38,7 @@ python manage.py runserver host:port
 Where, host and port are subsequently the IP of host server and the port you want the application to run on. In my example, I use `0.0.0.0` for host IP and `8000` for port. Using `0.0.0.0` helps us exposing the application to outbound network. After running the Django project, we will get something like following.
 
 ![runserver output](/static/img/create-your-first-django-project/create-your-first-django-project-1.png)
+
+You will still see some warning message in red color, I will talk about it later. Your project are now running, but it still can do nothing due to lack of database connecting, controller code, API, ... etc. In the next step, we will make an application for our Django project.
+
+## Create your first Django application
