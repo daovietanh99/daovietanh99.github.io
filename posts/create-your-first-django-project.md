@@ -8,11 +8,24 @@ permalink: /posts/render/create-your-first-django-project
 
 ![Django](https://img.shields.io/badge/django-%23092E20.svg?style=for-the-badge&logo=django&logoColor=white)
 ![DjangoREST](https://img.shields.io/badge/DJANGO-REST-ff1709?style=for-the-badge&logo=django&logoColor=white&color=ff1709&labelColor=gray)
+![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
 
-In this post, I will demonstrate a simple Django Web App. My tutorial focuses on the initial steps you’ll need to take to start a new web application. To start a django project, we simply use the bellow command:
+In this post, I will demonstrate a simple Django Web App. My tutorial focuses on the initial steps you’ll need to take to start a new web application.
+
+### Environment Preparation
+
+Firstly, you have to setup virtual environment for your project, you can use either `virtualenv` or `conda` to create new python3.10 environment and make sure you have activated it. Then, you have to install `django` and `django-admin` package to local. You may want to use `python3` command as well, in case you need to make sure that every packages are installed in the right place.
 
 ```shell
- python3 -m django startproject your_project_name
+python3 -m pip install django django-admin
+```
+
+### Create Django project
+
+To start a django project, we simply use the bellow command:
+
+```shell
+python3 -m django startproject your_project_name
 ```
 
 Once you run this command, a Django project with following boilerplate structure will be created inside your your_project_name folder. Let's pay attention on some project components. Firstly, we have `manage.py` file, where we can run django command from here. Go deeper we have a folder which name is as the same as the project name. Inside, we have `settings.py` file, that stores the project configuration; `urls.py` file contains API endpoints and routers, and `asgi.py` and `wsgi.py` for running server engine.
@@ -32,7 +45,7 @@ your_project_name
 We then can run the server by applying the following command in the project's root folder:
 
 ```shell
-python manage.py runserver host:port
+python3 manage.py runserver host:port
 ```
 
 Where, host and port are respectively the IP of host server and the port you want the application to run on. In my example, I use `0.0.0.0` for host IP and `8000` for port. Using `0.0.0.0` helps us exposing the application to outbound network. After running the Django project, we will get something like following.
@@ -41,4 +54,4 @@ Where, host and port are respectively the IP of host server and the port you wan
 
 You will still see some warning message in red color, I will talk about it later. Your project are now running, but it still can do nothing due to lack of database connecting, controller code, API, ... etc. In the next step, we will make an application for our Django project.
 
-### Create your first Django application
+### Create Django application
