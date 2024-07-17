@@ -4,7 +4,7 @@ coverimg: /static/img/cover.jpg
 permalink: /posts/render/create-your-first-django-project
 ---
 
-# Create your first Django Rest Framework project  
+# Django Tutorial: Create your first Django Rest Framework project  
 
 ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
 ![Django](https://img.shields.io/badge/django-%23092E20.svg?style=for-the-badge&logo=django&logoColor=white)
