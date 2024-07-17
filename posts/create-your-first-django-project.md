@@ -4,7 +4,7 @@ coverimg: /static/img/cover.jpg
 permalink: /posts/render/create-your-first-django-project
 ---
 
-# Create your first Django project  
+# Create your first Django Rest Framework project  
 
 ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
 ![Django](https://img.shields.io/badge/django-%23092E20.svg?style=for-the-badge&logo=django&logoColor=white)
@@ -14,10 +14,10 @@ In this post, I will demonstrate a simple Django Web App. My tutorial focuses on
 
 ### Environment Preparation
 
-Firstly, you have to setup virtual environment for your project, you can use either `virtualenv` or `conda` to create new python3.10 environment and make sure you have activated it. Then, you have to install `django` and `django-admin` package to local. You may want to use `python3` command as well, in case you need to make sure that every packages are installed in the right place.
+Firstly, you have to setup virtual environment for your project, you can use either `virtualenv` or `conda` to create new python3.10 environment and make sure you have activated it. Then, you have to install `django`, `django-admin` and `djangorestframework` package to local. You may want to use `python3` command as well, in case you need to make sure that every packages are installed in the right place.
 
 ```shell
-python3 -m pip install django django-admin
+python3 -m pip install django django-admin djangorestframework
 ```
 
 ### Create Django project
@@ -55,3 +55,24 @@ Where, host and port are respectively the IP of host server and the port you wan
 You will still see some warning message in red color, I will talk about it later. Your project are now running, but it still can do nothing due to lack of database connecting, controller code, API, ... etc. In the next step, we will make an application for our Django project.
 
 ### Create Django application
+
+Django project will have multiple applications, Django project itself is a root application, other applications themselves can be thought as sub-applications or sidecar applications. They can interact with one and others. We can easily create an application by using this command inside project root folder.
+
+```shell
+python3 manage.py startapp your_app_name
+```
+
+Now, Let's look at new application is created inside folder `your_app_name`
+
+```shell
+your_app_name
+├── admin.py
+├── apps.py
+├── __init__.py
+├── migrations
+│   └── __init__.py
+├── models.py
+├── tests.py
+└── views.py
+```
+
