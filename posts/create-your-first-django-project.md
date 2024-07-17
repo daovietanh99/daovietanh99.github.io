@@ -76,3 +76,8 @@ your_app_name
 └── views.py
 ```
 
+We also have some boilerplate components, they are `admin.py`, `apps.py`, `migrations`, `models.py`, `tests.py` and `views.py`. We then only focus on some mainly use components on this tutorial like `apps.py`, `models.py`, `migrations` and `views.py`. For `apps.py`, it contains definement and configuration of the application. Next to `models.py` and `migrations`, they are themselves ORM components for connecting, modeling, migrating database. Finally, we have 'views.py', different from View element on MVC model, view in Django has the same functionality as Control element in MVC model. 
+
+We now can run the project again and check the output.
+
+In the next posts, I will go through all components and get into details to build a completed Django Rest Framework project. Thanks for watching. See you then !!!
