@@ -12,5 +12,5 @@ permalink: /posts/render/document-the-django-project-with-drf-spectacular
 
 ### Install drf-spectacular application
 ### Setup url for drf-spectacular
-### Setup static file for drf-spectacular
+### Handle drf-spectacular static file 
 ### Example usage
