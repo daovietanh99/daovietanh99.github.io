@@ -10,7 +10,8 @@ permalink: /posts/render/filter-everything-with-django-filters
 ![Django](https://img.shields.io/badge/django-%23092E20.svg?style=for-the-badge&logo=django&logoColor=white)
 ![DjangoREST](https://img.shields.io/badge/DJANGO-REST-ff1709?style=for-the-badge&logo=django&logoColor=white&color=ff1709&labelColor=gray)
 
-### Filterset class
+### Create a filter with Filterset class
+### Add filter to Viewset
 ### Filter operators
 ### Filter by field attributes
 ### Group by
