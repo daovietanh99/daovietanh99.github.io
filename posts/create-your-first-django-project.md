@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/e48123ba-c132-4c14-8496-a293864f1bc6)![image](https://github.com/user-attachments/assets/5c52c709-9571-487a-9e9b-7f6abe77673b)---
+---
 date: 16-07-2024
 coverimg: /static/img/cover.jpg
 permalink: /posts/render/create-your-first-django-project
