@@ -10,6 +10,9 @@ permalink: /posts/render/handle-django-application-models
 ![Django](https://img.shields.io/badge/django-%23092E20.svg?style=for-the-badge&logo=django&logoColor=white)
 ![DjangoREST](https://img.shields.io/badge/DJANGO-REST-ff1709?style=for-the-badge&logo=django&logoColor=white&color=ff1709&labelColor=gray)
 
+### Connect to a database
+#### Sqlite3
+#### Postgres
 ### Define a model
 ### Not null, not blank
 ### Relation field
