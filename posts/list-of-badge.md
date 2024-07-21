@@ -45,3 +45,4 @@ permalink: /posts/render/list-of-badge
 ![RabbitMQ](https://img.shields.io/badge/Rabbitmq-FF6600?style=for-the-badge&logo=rabbitmq&logoColor=white)
 ![Minio](https://img.shields.io/badge/minio-C72C48?style=for-the-badge&logo=minio&logoColor=white)
 ![Ceph](https://img.shields.io/badge/Ceph-F0424D?style=for-the-badge&logo=ceph&logoColor=white)
+![Keycloak](https://img.shields.io/badge/Keycloak-33C6E9?style=for-the-badge&logo=keycloak&logoColor=white)
