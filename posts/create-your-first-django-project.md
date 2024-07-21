@@ -56,7 +56,7 @@ You will still see some warning message in red color, I will talk about it later
 
 ### Create Django application
 
-Django project will have multiple applications, Django project itself is a root application, other applications themselves can be thought as sub-applications or sidecar applications. They can interact with one and others. We can easily create an application by using this command inside project root folder.
+Django project will have multiple applications, Django project itself is a root application, other applications themselves can be thought as sub-applications or sidecar applications. Applications can interact with one and others. They are the kind of something like Plug and Play system, where you can add or remove application very convenion whenever, whatever you want. We then can easily create an application by using this command inside project root folder.
 
 ```shell
 python3 manage.py startapp your_app_name
