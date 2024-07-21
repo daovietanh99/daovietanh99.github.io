@@ -1,10 +1,10 @@
 ---
 date: 17-07-2024
 coverimg: /static/img/cover.jpg
-permalink: /posts/render/make-your-life-easier-with-serializers
+permalink: /posts/render/django-serializers-handle-your-data-easier-with-serializers
 ---
 
-# Django Tutorial: Make your life easier with Django Rest Framework Serializers
+# Django Serializers: Handle your data easier with Django Rest Framework Serializers
 
 ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
 ![Django](https://img.shields.io/badge/django-%23092E20.svg?style=for-the-badge&logo=django&logoColor=white)
