@@ -1,4 +1,4 @@
----
+![image](https://github.com/user-attachments/assets/e48123ba-c132-4c14-8496-a293864f1bc6)![image](https://github.com/user-attachments/assets/5c52c709-9571-487a-9e9b-7f6abe77673b)---
 date: 16-07-2024
 coverimg: /static/img/cover.jpg
 permalink: /posts/render/create-your-first-django-project
@@ -78,8 +78,23 @@ your_app_name
 
 We also have some boilerplate components, they are `admin.py`, `apps.py`, `migrations`, `models.py`, `tests.py` and `views.py`. We then only focus on some mainly use components on this tutorial like `apps.py`, `models.py`, `migrations` and `views.py`. For `apps.py`, it contains definement and configuration of the application. Next to `models.py` and `migrations`, they are themselves ORM components for connecting, modeling, migrating database. Finally, we have 'views.py', different from View element on MVC model, view in Django has the same functionality as Control element in MVC model. 
 
-In `/your_project_name/settings.py`, we add 
+In `/your_project_name/settings.py`, we have to add our application to `INSTALLED_APPS`, so your project can understand and find out your application.
 
-We now can run the project again and check the output.
+```python
+
+INSTALLED_APPS = [
+    'django.contrib.admin',
+    'django.contrib.auth',
+    'django.contrib.contenttypes',
+    'django.contrib.sessions',
+    'django.contrib.messages',
+    'django.contrib.staticfiles',
+    'rest_framework',
+    'your_application_name'
+]
+
+```
+
+I also add `rest_framework` application to our project to enable Django Rest Framework. We now can run the project again and check the output.
 
 In the next posts, I will go through all components and get into details to build a completed Django Rest Framework project. Thanks for watching. See you then !!!
