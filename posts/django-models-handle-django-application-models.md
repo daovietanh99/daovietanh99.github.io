@@ -28,8 +28,31 @@ DATABASES = {
 
 ```
 
-#### Postgres
+#### PostgreSQL
+ We need to install the PostgreSQL database adapter to communicate to the database with Python to install it run the following command in the shell.
+```shell
+pip install psycopg2
+```
+
+We also need to update these settings to integrate our PostgreSQL with the project.
+```python
+
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'mydb',
+        'USER': 'myuser',
+        'PASSWORD': 'mypass',
+        'HOST': 'localhost',
+        'PORT': '5432',
+    }
+}
+
+```
+After configuring the `setting.py` we go to root project and run the server to test the connection. If our project successfully connected without any errors, the connection is success and vice versa.
+
 ### Define a model
+### Migrate the database
 ### Not null, not blank
 ### Relation field
 ### Unique field method
