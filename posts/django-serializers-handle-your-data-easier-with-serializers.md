@@ -16,6 +16,7 @@ permalink: /posts/render/django-serializers-handle-your-data-easier-with-seriali
 #### Update an instance
 #### Convert an instance into Python dictionary
 ### Serializers fields
+#### `fields` and `excludes`
 #### Field with type Serializers and Relation field
 #### Required field
 #### Read only and write only field
