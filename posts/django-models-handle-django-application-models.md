@@ -51,8 +51,24 @@ DATABASES = {
 ```
 After configuring the `setting.py` we go to root project and run the server to test the connection. If our project successfully connected without any errors, the connection is success and vice versa.
 
-### Define a model
 ### Migrate the database
+The database migration process ensures the tables of database keep track with all Django project logic and models. To run your first migrate process, type the bellow command to generate migration file.
+
+```shell
+python3 manage.py makemigrations
+```
+
+The migration files will appear inside `migrates` folder of each application, their name start with a four-characters number (0001, 0002, ...). The migration files reflect the process of creating or updating tables for keeping track with current model definitions. To apply the migrations, we run the command
+
+```shell
+python3 manage.py migrate
+```
+
+Now, you can check the database and make sure all tables look like what you have created.
+
+### Define a model
+
+
 ### Not null, not blank
 ### Relation field
 ### Unique field method
