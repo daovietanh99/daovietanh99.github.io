@@ -64,6 +64,10 @@ The migration files will appear inside `migrates` folder of each application, th
 python3 manage.py migrate
 ```
 
+Your output will be something like that
+
+![migrate output](/static/img/django-models-handle-django-application-models/django-models-handle-django-application-models-1.png)
+
 Now, you can check the database and make sure all tables look like what you have created.
 
 ### Define a model
