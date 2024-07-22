@@ -71,7 +71,11 @@ Your output will look something like that
 Now, you can check the database and make sure all tables look like what you have created.
 
 ### Define a model
+One model object in Django represent for one table inside database, properties of model object is the columns of table. We will define tables inside our `models.py` file of our Django application. In this example, I define a simple model call `MyModel` as bellow.
 
+```python
+
+```
 
 ### Not null, not blank
 ### Relation field
