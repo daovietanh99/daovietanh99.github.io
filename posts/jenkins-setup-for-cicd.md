@@ -102,9 +102,11 @@ or
 docker-compose up
 ```
 
-### Create Django project
+### Configure Jenkins
 
 
+### Setup new agent
 
-### Create Django application
+
+### Configure new credentials
 
