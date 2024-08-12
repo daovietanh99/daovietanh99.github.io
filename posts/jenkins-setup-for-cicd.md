@@ -51,7 +51,7 @@ services:
       - jenkins-data:/var/jenkins_home
       - jenkins-docker-certs:/certs/client:ro
     ports:
-      - 8085:8080
+      - 8080:8080
       - 50000:50000
 
 volumes:
@@ -61,6 +61,46 @@ volumes:
     name: jenkins-docker-certs
 ```
 
+Whereas, the jenkins-blueocean image can be created by following `Dockerfile`.
+
+```dockerfile
+FROM jenkins/jenkins:2.440.3-jdk17
+USER root
+RUN apt-get update && apt-get install -y lsb-release
+RUN curl -fsSLo /usr/share/keyrings/docker-archive-keyring.asc \
+  https://download.docker.com/linux/debian/gpg
+RUN echo "deb [arch=$(dpkg --print-architecture) \
+  signed-by=/usr/share/keyrings/docker-archive-keyring.asc] \
+  https://download.docker.com/linux/debian \
+  $(lsb_release -cs) stable" > /etc/apt/sources.list.d/docker.list
+RUN apt-get update && apt-get install -y docker-ce-cli
+USER jenkins
+RUN jenkins-plugin-cli --plugins "blueocean docker-workflow"#
+```
+
+To build jenkins-blueocean image, in the parent directory contains above Dockerfile, we run command
+
+```shell
+docker build . -t jenkins-blueocean
+```
+
+Then, we should see a new docker image to be created inside your local docker
+
+```shell
+docker images list
+```
+
+Finally, we now can start the Jenkins by running command
+
+```shell
+docker compose up
+```
+
+or
+
+```shell
+docker-compose up
+```
 
 ### Create Django project
 
