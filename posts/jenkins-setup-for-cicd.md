@@ -12,8 +12,54 @@ permalink: /posts/render/jenkins-setup-for-cicd
 
 In this post, I will show you how to set up a Jenkins with Blueocean CI/CD pipeline.
 
-### Environment Preparation
+### Docker compose Preparation
+First of all, we will start create a Jenkins running on your local machine by making `docker-compose.yml` file. The Docker compose file will have following content
 
+```yaml
+version: '3.0'
+networks:
+  jenkins:
+    driver: bridge
+
+services:
+  jenkins-docker:
+    restart: always
+    image: docker:dind
+    command: --storage-driver=overlay2
+    networks:
+      jenkins:
+        aliases:
+          - docker
+    privileged: true
+    environment:
+      - DOCKER_TLS_CERTDIR=/certs
+    volumes:
+      - jenkins-docker-certs:/certs/client
+      - jenkins-data:/var/jenkins_home
+    ports:
+      - 2376:2376
+  
+  jenkins-blueocean:
+    restart: on-failure
+    image: jenkins-blueocean
+    networks:
+      - jenkins
+    environment:
+      - DOCKER_CERT_PATH=/certs/client
+      - DOCKER_TLS_VERIFY=1
+    volumes:
+      - jenkins-data:/var/jenkins_home
+      - jenkins-docker-certs:/certs/client:ro
+    ports:
+      - 8085:8080
+      - 50000:50000
+
+volumes:
+  jenkins-data: 
+    name: jenkins-data
+  jenkins-docker-certs:
+    name: jenkins-docker-certs
+```
 
 
 ### Create Django project
