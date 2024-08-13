@@ -93,13 +93,13 @@ docker images list
 Finally, we now can start the Jenkins by running command
 
 ```shell
-docker compose up
+docker compose up -d
 ```
 
 or
 
 ```shell
-docker-compose up
+docker-compose up -d
 ```
 
 ### Configure Jenkins
