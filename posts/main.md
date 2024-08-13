@@ -14,6 +14,6 @@ permalink: /posts/render/main
 ## [Django Filters: Filter everything with Django Filters](https://daovietanh99.github.io/post/django-filters-filter-everything-with-django-filters)
 
 ## CICD
-[Setup Jenkins for CICD pipeline](https://daovietanh99.github.io/post/jenkins-setup-for-cicd)
+## [Setup Jenkins for CICD pipeline](https://daovietanh99.github.io/post/jenkins-setup-for-cicd)
 
 ## 3D Reconstruction
